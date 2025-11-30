@@ -1,18 +1,9 @@
-# Pothole Severity Detection using YOLO
+# Pothole Severity Detection System
 
-This repository contains implementations of **YOLOv12** and a **YOLOv5 baseline** for detecting potholes and classifying their severity (Low, Medium, High) from images.
-
----
-
-## Table of Contents
-1. [Usage](#usage)
-2. [Project Overview](#project-overview)
-3. [Dataset](#dataset)
-4. [Models](#models)
-5. [Training & Evaluation](#training--evaluation)
-6. [Results](#results) 
----
-
+This repository contains implementations of **YOLOv12** and a **YOLOv5 baseline** for detecting potholes and classifying their severity from images. This project implements a real-time computer vision system for automated detection and severity classification of road potholes, leveraging the YOLOv12s deep learning architecture for high-speed object localization. The core innovation is a lightweight Hybrid Severity Scoring mechanism that classifies potholes into Low, Medium, or High risk tiers by analyzing 2D bounding box attributes specifically, the pothole's relative area and its vertical position in the image (as a proxy for distance/proximity). This system is designed for cost-effective deployment in infrastructure monitoring applications, and its final inference pipeline is fully accessible and demonstrable through an interactive Gradio web interface that handles both image and video streams.
+![Output Image](project_proof.png)
+## NOTE:
+Notebooks are used for fine-tuning purposes, after model fine-tuning dataset and .pt files were zipped into YOLOv5.zip and YOLOv12.zip
 
 ## 1. Usage
 1. Clone this repository:
@@ -38,15 +29,15 @@ We compare **YOLOv12** against a **YOLOv5 baseline** to demonstrate improvements
 ---
 
 ## 4. Models
-- **YOLOv5 (baseline)**: medium variant (`yolov5s`) trained on the custom pothole dataset.
-- **YOLOv12**: medium variant (`yolov12s`) trained on the same dataset.
+- **YOLOv5 (baseline)**: medium variant (`yolov5s`) fine-tuned on the custom pothole dataset.
+- **YOLOv12**: medium variant (`yolov12s`) fine-tuned on the same dataset.
 
-Both models were trained without major modifications to compare baseline performance with YOLOv12.
+Both models were fine-tuned without major modifications to compare baseline performance with YOLOv12.
 
 ---
 
-## 5. Training & Evaluation
-- Training performed on **Google Colab** with GPU acceleration.
+## 5. Fine-tuning & Evaluation
+- Fine-tuning was performed on **Google Colab** with GPU acceleration.
 - Models trained for 60 epochs with standard YOLO hyperparameters.
 ![YOLOv12 Training](images/yolov12.png)
 - Metrics computed on the **test set**:
