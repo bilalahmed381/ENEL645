@@ -1,0 +1,6 @@
+git+https://github.com/sunsmarterjie/yolov12.git
+opencv-python
+gradio
+numpy
+matplotlib
+scipy
