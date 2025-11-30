@@ -6,7 +6,7 @@ This repository contains implementations of **YOLOv12** and a **YOLOv5 baseline*
 Notebooks are used for fine-tuning purposes, after model fine-tuning dataset and .pt files were zipped into YOLOv5.zip and YOLOv12.zip
 
 ## 1. Usage
-1. Clone this repository:
+1. Clone this repository
 2. Install libraries
 ```bash
 pip install -r requirements.txt
