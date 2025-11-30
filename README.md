@@ -33,7 +33,7 @@ We compare **YOLOv12** against a **YOLOv5 baseline** to demonstrate improvements
 
 ## 3. Dataset
 - Custom [dataset](https://universe.roboflow.com/aegis/pothole-detection-i00zy/dataset/2) of pothole images
-- Images are split into **training**, **validation**, and **test** sets.
+- Images are split into **training (70%)**, **validation (20%)**, and **test (10%)** sets.
 
 ---
 
@@ -47,7 +47,8 @@ Both models were trained without major modifications to compare baseline perform
 
 ## 5. Training & Evaluation
 - Training performed on **Google Colab** with GPU acceleration.
-- Models trained for X epochs (replace with actual number) with standard YOLO hyperparameters.
+- Models trained for 60 epochs with standard YOLO hyperparameters.
+![YOLOv12 Training](images/yolov12.png)
 - Metrics computed on the **test set**:
   - **Precision**  
   - **Recall**  
