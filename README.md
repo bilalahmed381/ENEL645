@@ -39,17 +39,13 @@ Both models were fine-tuned without any modifications to compare baseline perfor
 - Fine-tuning was performed on **Google Colab NVIDIA T4** accelerator.
 - Models trained for 60 epochs with standard YOLO hyperparameters.
 ![YOLOv12 Training](images/yolov12.png)
-- Metrics computed on the **test set**:
-  - **Precision**  
-  - **Recall**  
-  - **F1-score**  
-  - **mAP@50**  
-  - **mAP@50:95**  
-  - **mAP@75**
+
+
 
 ---
 
 ## 6. Results
+Below metrics are computed on the **test set**
 
 | Model     | mAP 50:95 | mAP 50 | mAP 75 | Precision (%) | Recall (%) | F1-score (%) |
 |-----------|------------|--------|--------|---------------|------------|--------------|
