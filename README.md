@@ -23,7 +23,7 @@ This project aims to detect potholes on roads and classify their severity using 
 
 ## 3. Dataset
 - Custom [dataset](https://universe.roboflow.com/aegis/pothole-detection-i00zy/dataset/2) of pothole images
-- Images are split into **training (70%)**, **validation (20%)**, and **test (10%)** sets.
+- Images are split into **training (70%)**, **validation (20%)** and **test (10%)** sets.
 
 ---
 
