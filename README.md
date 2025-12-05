@@ -2,8 +2,7 @@
 
 This repository contains implementations of **YOLOv12** and a **YOLOv5 baseline** for detecting potholes and classifying their severity from images. This project implements a real-time computer vision system for automated detection and severity classification of road potholes, leveraging the YOLOv12s deep learning architecture for high-speed object localization. The core innovation is a lightweight Hybrid Severity Scoring mechanism that classifies potholes into Low, Medium, or High risk tiers by analyzing 2D bounding box attributes specifically, the pothole's relative area and its vertical position in the image (as a proxy for distance/proximity). This system is designed for cost-effective deployment in infrastructure monitoring applications, and its final inference pipeline is fully accessible and demonstrable through an interactive Gradio web interface that handles both image and video streams.
 ![Output Image](images/project_proof.png)
-## NOTE:
-Notebooks are used for fine-tuning purpose, after model fine-tuning dataset, training results and .pt files get zipped into YOLOv5.zip and YOLOv12.zip files respectively.
+NOTE: Notebooks are used for fine-tuning purpose, after model fine-tuning - dataset, training results and .pt files get zipped into YOLOv5.zip and YOLOv12.zip files respectively.
 
 ## 1. Usage
 1. Clone this repository
