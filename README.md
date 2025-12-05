@@ -48,8 +48,8 @@ Below metrics are computed on the **test set**
 
 | Model     | mAP 50:95 | mAP 50 | mAP 75 | Precision (%) | Recall (%) | F1-score (%) |
 |-----------|------------|--------|--------|---------------|------------|--------------|
-| YOLOv5 (Baseline)    | 40.81      | 70.04  | 45.13  | 71.82         | 82.10      | 76.62        |
-| YOLOv12   | 52.38      | 84.18  | 59.37  | 87.75         | 78.28      | 82.74        |
+| YOLOv5s (Baseline)    | 40.81      | 70.04  | 45.13  | 71.82         | 82.10      | 76.62        |
+| YOLOv12s   | 52.38      | 84.18  | 59.37  | 87.75         | 78.28      | 82.74        |
 
 ⚡ Inference Speed Comparison (NVIDIA T4 GPU)
 
